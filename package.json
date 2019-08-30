@@ -1,0 +1,15 @@
+{
+  "name": "last-fm-alubms",
+  "version": "1.0.0",
+  "description": "Your last.fm albums",
+  "scripts": {
+    "start": "webpack --config ./config/webpack.config.babel.js --progress --profile"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
+}
