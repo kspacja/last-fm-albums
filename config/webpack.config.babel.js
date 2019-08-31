@@ -1,10 +1,8 @@
 import path from 'path';
+import { SRC_PATH, DIST_PATH } from './consts';
 
-// plugins
-import HtmlWebpackPlugin from 'html-webpack-plugin';
-
-const DIST_PATH = path.resolve(__dirname, '../dist');
-const SRC_PATH = path.resolve(__dirname, '../src');
+import plugins from './webpack.plugins';
+import loaders from './webpack.loaders';
 
 export default {
   mode: 'development',
@@ -15,11 +13,11 @@ export default {
   },
   devServer: {
     contentBase: DIST_PATH,
-    stats: 'minimal'
+    stats: 'minimal',
+    hot: true
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.join(SRC_PATH, 'templates', 'index.html')
-    })
-  ]
+  module: {
+    rules: loaders
+  },
+  plugins
 };
