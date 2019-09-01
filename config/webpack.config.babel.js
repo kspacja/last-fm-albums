@@ -9,15 +9,15 @@ export default {
   entry: path.join(SRC_PATH, 'index.js'),
   output: {
     filename: 'main.js',
-    path: DIST_PATH
+    path: DIST_PATH,
   },
   devServer: {
     contentBase: DIST_PATH,
     stats: 'minimal',
-    hot: true
+    hot: true,
   },
   module: {
-    rules: loaders
+    rules: loaders,
   },
-  plugins
+  plugins,
 };
