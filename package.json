@@ -4,7 +4,8 @@
   "description": "Your last.fm albums",
   "scripts": {
     "build": "webpack --config ./config/webpack.config.babel.js --progress --profile",
-    "start": "webpack-dev-server --config ./config/webpack.config.babel.js"
+    "start": "webpack-dev-server --config ./config/webpack.config.babel.js",
+    "lint": "eslint ./src ./config --ext .js"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",

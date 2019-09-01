@@ -21,3 +21,31 @@
  * rembember that you have to manually implement if is custom made replace
  * in most of case a loader (list style-loader) should handle that
  * so if sth not replacing it is most probably your fault xD
+
+### Linting and formatting:
+ #### Most important diffrance:
+ * `prettier` -- to FORMATTING code
+ * `eslint` -- to AVOID BUGS and BAD PRACTIES
+
+ #### Most imporant steps:
+ 1. Install:
+   * `eslint`
+   * `eslint-config-prettier`
+   * `eslint-plugin-prettier`
+   * `prettier` (exact version)
+ 2. Create eslint config:
+```
+  "env": { // enviroment config to have global variables to use
+      "browser": true,
+      "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6, // self-explained name
+    "sourceType": "module" // import, export handling
+  },
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"]
+            // eslint:recommend as example, remember to put plugin:prettier/recommended as last element
+```
+  Putting `plugin:prettier/recommended` to `extends` give two things:
+   - `prettier` would be run at the moment of running `eslint`
+   - disabling eventual conflitcs `eslint` with `prettier`

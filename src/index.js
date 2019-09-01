@@ -1,3 +1,3 @@
 import './main.css';
 
-console.log('TEST');
+console.log('Start app');
