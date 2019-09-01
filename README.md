@@ -34,7 +34,7 @@
    * `eslint-plugin-prettier`
    * `prettier` (exact version)
  2. Create eslint config:
-```
+```json
   "env": { // enviroment config to have global variables to use
       "browser": true,
       "node": true
@@ -46,10 +46,10 @@
   "extends": ["eslint:recommended", "plugin:prettier/recommended"]
             // eslint:recommend as example, remember to put plugin:prettier/recommended as last element
 ```
-  Putting `plugin:prettier/recommended` to `extends` give two things:
+  Putting `plugin:prettier/recommended` to `extends` gives two things:
    - `prettier` would be run at the moment of running `eslint`
    - disabling eventual conflitcs `eslint` with `prettier`
 
 ## General hints:
-### Git fine hints:
+### Git:
  * use `git push --force-with-lease` instead of `--force` in case of changing name of commit after first push
