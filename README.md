@@ -2,6 +2,9 @@
 
 ## Cookbook
 
+### Git fine hints:
+ * use `git push --force-with-lease` instead of `--force` in case of changing name of commit after first push
+
 ### Webpack config in es6
  1. Install:
    * `@babel/core`,
