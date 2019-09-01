@@ -2,9 +2,6 @@
 
 ## Cookbook
 
-### Git fine hints:
- * use `git push --force-with-lease` instead of `--force` in case of changing name of commit after first push
-
 ### Webpack config in es6
  1. Install:
    * `@babel/core`,
@@ -52,3 +49,7 @@
   Putting `plugin:prettier/recommended` to `extends` give two things:
    - `prettier` would be run at the moment of running `eslint`
    - disabling eventual conflitcs `eslint` with `prettier`
+
+## General hints:
+### Git fine hints:
+ * use `git push --force-with-lease` instead of `--force` in case of changing name of commit after first push
