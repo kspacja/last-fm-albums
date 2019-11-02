@@ -50,6 +50,12 @@
    - `prettier` would be run at the moment of running `eslint`
    - disabling eventual conflitcs `eslint` between `prettier`
 
+### Babeling
+ * presets (besides few) are deprecated
+ * to get experimental features you need to install plugins
+
+Basic preset (`env`) includes a lot needed features, the best way to check is taking a look on `@babel\preset-env` github repo. List of experimental feature you can find in `Plugins` section on babel docs website.
+
 ## General hints:
 ### Git:
  * use `git push --force-with-lease` instead of `--force` in case of changing name of commit after first push
