@@ -23,7 +23,7 @@
  * so if sth is not replacing, it is most probably your fault xD
 
 ### Linting and formatting:
- #### Most important diffrance:
+ #### Most important diffrence:
  * `prettier` -- to FORMATTING code
  * `eslint` -- to AVOID BUGS and BAD PRACTIES
 
